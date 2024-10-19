@@ -2,51 +2,83 @@
 \usepackage{amsmath}
 
 \begin{document}
-\documentclass{article}
-\usepackage{amsmath}
+% section 1a
 
-\begin{document}
-
-\section*{a) Conversões}
+\section*{1a) Conversiones}
 
 \begin{itemize}
-    \item Autonomía: \(25 \, \text{km} = 25 \times 1000 \, \text{m} = 25.000 \, \text{m}\)
-    \item Vmax: \(25 \, \text{km/h} = 6,94 \, \text{m/s} \left( 25 \, \text{km/h} \times \frac{1000 \, \text{m}}{1 \, \text{km}} \times \frac{1 \, \text{h}}{3600 \, \text{s}} \right)\)
+    \item Autonomía: \(25 \, \text{km} = 25 \times 1000 \, \text{m} = 25000 \, \text{m}\)
+    \item \(V_{\text{max}}: 25 \, \text{km/h} = 6.94 \, \text{m/s} \left( 25 \, \text{km/h} \times \frac{1000 \, \text{m}}{1 \, \text{km}} \times \frac{1 \, \text{h}}{3600 \, \text{s}} \right)\)
     \item \(V_0: 0 \, \text{km/h} = 0 \, \text{m/s}\)
-    \item \(V: 15,3 \, \text{km/h} = 4,25 \, \text{m/s} \left( 15,3 \, \text{km/h} \times \frac{1000 \, \text{m}}{1 \, \text{km}} \times \frac{1 \, \text{h}}{3600 \, \text{s}} \right)\)
-    \item Tiempo: \(1,7 \, \text{segundos} = 1,7 \, \text{s}\)
+    \item \(V: 15.3 \, \text{km/h} = 4.25 \, \text{m/s} \left( 15.3 \, \text{km/h} \times \frac{1000 \, \text{m}}{1 \, \text{km}} \times \frac{1 \, \text{h}}{3600 \, \text{s}} \right)\)
+    \item Tiempo: \(1.7 \, \text{segundos} = 1.7 \, \text{s}\)
 \end{itemize}
 
+% section 1b
 
-\section*{b) Cálculo de la aceleración media}
+\section*{1b) Cálculo de la aceleración media}
 
 Para calcular la aceleración media (\(a\)) que experimenta el patinete, podemos utilizar la fórmula de la aceleración media, que se da por:
 
 \[
-a = \frac{V - V_0}{\Delta t}
+a = \frac{V - V_0}{t - t_0}
 \]
 
 donde:
 \begin{itemize}
-    \item \(V\) es la velocidad final,
-    \item \(V_0\) es la velocidad inicial,
-    \item \(\Delta t\) es el intervalo de tiempo durante el cual ha ocurrido la aceleración.
+    \item \(\Delta V\) es la variación de la velocidad (\(V - V_0\)),
+    \item \(\Delta t\) es la variación de tiempo (\(t - t_0\)).
 \end{itemize}
 
 Sustituyendo los valores:
 
 \begin{itemize}
+    \item \(V = 4.25 \, \text{m/s}\) (velocidad final después de la aceleración),
     \item \(V_0 = 0 \, \text{m/s}\) (inicialmente en reposo),
-    \item \(V = 4,25 \, \text{m/s}\) (velocidad final después de la aceleración),
-    \item \(\Delta t = 1,7 \, \text{s}\) (tiempo de aceleración).
+    \item \(t = 1.7 \, \text{s}\) (tiempo final de la aceleracion),
+    \item \(t_0 = 0 \, \text{s}\) (tiempo inicial, en que el patinete empieza a acelerar),
+
 \end{itemize}
 
 Ahora podemos calcular:
 
 \[
-a = \frac{4,25 \, \text{m/s} - 0 \, \text{m/s}}{1,7 \, \text{s}} = \frac{4,25 \, \text{m/s}}{1,7 \, \text{s}} \approx 2,5 \, \text{m/s}^2
+a = \frac{4.25 \, \text{m/s} - 0 \, \text{m/s}}{1.7 - 0 \, \text{s}} = \frac{4.25 \, \text{m/s}}{1.7 \, \text{s}} = 2.5 \, \text{m/s}^2
 \]
 
 \subsection*{Justificación del Signo del Resultado}
 
 El signo de la aceleración es positivo, lo que indica que el patinete está acelerando. Una aceleración positiva significa que la velocidad del patinete está aumentando, lo que es coherente con el hecho de que el patinete comenzó desde el estado de inactividad y aumentó su velocidad al acelerar. Por lo tanto, la justificación del signo del resultado es que el patinete está en movimiento acelerado, saliendo del estado de reposo y aumentando su velocidad a lo largo del tiempo.
+
+\section*{1c) Cálculo de la distancia recorrida por el patinete durante el tiempo que ha acelerado. } 
+
+Para calcular la distancia recorrida por la patineta durante el tiempo que ha acelerado, se puede utilizar la fórmula de la distancia recorrida en un movimiento uniformemente acelerado:
+
+\[
+d = V_0 t + \frac{1}{2} a t^2
+\]
+
+Donde:
+
+\begin{itemize}
+    \item \(d\) es la distancia recorrida
+    \item \(V_0\) es la velocidad inicial (que es \(0 \, \text{m/s}\) en este caso)
+    \item \(t\) es el tiempo que ha acelerado (\(1,7 \, \text{s}\))
+    \item \(a\) es la aceleración (\(2,5 \, \text{m/s}^2\))
+\end{itemize}
+
+Sustituyendo los valores, obtenemos:
+
+\[
+d = 0 \, \text{m/s} \times 1,7 \, \text{s} + \frac{1}{2} \times 2,5 \, \text{m/s}^2 \times (1,7 \, \text{s})^2 \approx 3,61 \, \text{m}
+\]
+
+Por lo tanto, la distancia recorrida por la patineta durante el tiempo que ha acelerado es aproximadamente de \(3,61 \, \text{metros}\).
+
+\end{document}
+
+
+
+
+\end{document}
+
