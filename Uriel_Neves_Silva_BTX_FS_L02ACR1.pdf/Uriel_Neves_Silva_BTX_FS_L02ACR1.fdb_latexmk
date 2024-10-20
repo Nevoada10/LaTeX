@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1729416367.40464 "/Users/urielnevessilva/PycharmProjects/LaTeX/latex.tex" "latex.pdf" "latex" 1729416368.25561 0
+["pdflatex"] 1729426918.06463 "/Users/urielnevessilva/PycharmProjects/LaTeX/Uriel_Neves_Silva_BTX_FS_L02ACR1.pdf/Uriel_Neves_Silva_BTX_FS_L02ACR1.tex" "Uriel_Neves_Silva_BTX_FS_L02ACR1.pdf" "Uriel_Neves_Silva_BTX_FS_L02ACR1" 1729426918.81714 0
   "/Users/urielnevessilva/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1729368017.47212 11524 e5f04190982e9b58a0e5f3f878acfa2b ""
-  "/Users/urielnevessilva/PycharmProjects/LaTeX/latex.tex" 1729416367.17465 10050 01fb526fb74e17bbc6efd5067040cb44 ""
+  "/Users/urielnevessilva/PycharmProjects/LaTeX/Uriel_Neves_Silva_BTX_FS_L02ACR1.pdf/Uriel_Neves_Silva_BTX_FS_L02ACR1.tex" 1729426917.83313 13362 990060b84d498bef450f6d9acedb2ba3 ""
   "/usr/local/texlive/2024basic/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/local/texlive/2024basic/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024basic/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -153,16 +153,17 @@
   "/usr/local/texlive/2024basic/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty" 1601326656 274 5ae372b7df79135d240456a1c6f2cf9a ""
   "/usr/local/texlive/2024basic/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty" 1601326656 325 f9f16d12354225b7dd52a3321f085955 ""
   "/usr/local/texlive/2024basic/texmf-dist/tex/latex/pgfplots/pgfplots.sty" 1496704190 4904 ee78b44e85d6fccf08cd99370557481e ""
+  "/usr/local/texlive/2024basic/texmf-dist/tex/latex/ragged2e/ragged2e.sty" 1687466457 10085 3dececaeed388e31285c366e124c0c4e ""
   "/usr/local/texlive/2024basic/texmf-dist/tex/latex/xcolor/xcolor.sty" 1700082560 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "/usr/local/texlive/2024basic/texmf-dist/web2c/texmf.cnf" 1708706663 41649 5d6ae549fbbcb850a863f69aa41f3d10 ""
   "/usr/local/texlive/2024basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1729367485.25757 79187 3707ba1a1c2304ab6bb6cb291e5e6f79 ""
   "/usr/local/texlive/2024basic/texmf-var/web2c/pdftex/pdflatex.fmt" 1729367462 7536455 398e0517640e6f6e10de21b08207b1d2 ""
   "/usr/local/texlive/2024basic/texmf.cnf" 1710011638 628 8b896f7d9d41b43f4346b9091e52171f ""
-  "latex.aux" 1729416368.1759 274 fd99fd8ba27bcb9cc5d5902fe4be147f "pdflatex"
-  "latex.tex" 1729416367.17465 10050 01fb526fb74e17bbc6efd5067040cb44 ""
+  "Uriel_Neves_Silva_BTX_FS_L02ACR1.aux" 1729426918.73747 274 a408e443feba537fa38289c3353f9737 "pdflatex"
+  "Uriel_Neves_Silva_BTX_FS_L02ACR1.tex" 1729426917.83313 13362 990060b84d498bef450f6d9acedb2ba3 ""
   "tabla.png" 1729414082.82459 7175 ad40ddefe1fad2da2c46e9fe9a0ed9f5 ""
   (generated)
-  "latex.aux"
-  "latex.log"
-  "latex.pdf"
+  "Uriel_Neves_Silva_BTX_FS_L02ACR1.aux"
+  "Uriel_Neves_Silva_BTX_FS_L02ACR1.log"
+  "Uriel_Neves_Silva_BTX_FS_L02ACR1.pdf"
   (rewritten before read)

@@ -2,6 +2,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{pgfplots}
+\usepackage{ragged2e}
 \pgfplotsset{compat=1.18}
 \usepackage{float} % Add this line
 
@@ -9,13 +10,16 @@
 
 \section*{1) Enunciado del Problema}
 
-Un chico de 21 años se dispone a circular por el carril bici del Paralelo de Barcelona con un patinete eléctrico. El patinete tiene un ordenador interno para conocer en todo momento la velocidad y el estado de la batería. La autonomía que permite la batería es de \textbf{25 km}, la velocidad máxima es de \textbf{25 km/h} y tiene 3 tipos de sistemas de frenos. El chico está en un semáforo parado, sube al patinete inicialmente en reposo y cuando el semáforo se pone en verde, es capaz de acelerar de \textbf{0 km/h} a \textbf{15,3 km/h} en \textbf{1,7} segundos en un tramo sin fricción.
+Un chico de \textbf{21 años}  se dispone a circular por el carril bici del Paralelo de Barcelona con un patinete eléctrico. El patinete tiene un ordenador interno para conocer en todo momento la velocidad y el estado de la batería. La autonomía que permite la batería es de \textbf{25 km}, la velocidad máxima es de \textbf{25 km/h} y tiene 3 tipos de sistemas de frenos. El chico está en un semáforo parado, sube al patinete inicialmente en reposo y cuando el semáforo se pone en verde, es capaz de acelerar de \textbf{0 km/h} a \textbf{15,3 km/h} en \textbf{1,7} segundos en un tramo sin fricción.
 
-% section 1a
+% section 1a ----------------------------------------------------------------------------------------------------
 
-\section*{1a) Conversiones}
+\section*{1a) Conversiones de Unidades S.I}
 
 \begin{itemize}
+    \item Edad: \[
+21 \, \text{años} = 21 \times \frac{365.25 \, \text{días}}{1 \, \text{año}} \times \frac{24 \, \text{horas}}{1 \, \text{día}} \times \frac{60 \, \text{minutos}}{1 \, \text{hora}} \times \frac{60 \, \text{segundos}}{1 \, \text{minuto}} = 662709600\, \text{segundos}
+\]
     \item Autonomía: \(25 \, \text{km} = 25 \times 1000 \, \text{m} = 25000 \, \text{m}\)
     \item \(V_{\text{max}}: 25 \, \text{km/h} = 6.94 \, \text{m/s} \left( 25 \, \text{km/h} \times \frac{1000 \, \text{m}}{1 \, \text{km}} \times \frac{1 \, \text{h}}{3600 \, \text{s}} \right)\)
     \item \(V_0: 0 \, \text{km/h} = 0 \, \text{m/s}\)
@@ -23,26 +27,15 @@ Un chico de 21 años se dispone a circular por el carril bici del Paralelo de Ba
     \item Tiempo: \(1.7 \, \text{segundos} = 1.7 \, \text{s}\)
 \end{itemize}
 
-
-
-
-
-
-% section 1b
+% section 1b ----------------------------------------------------------------------------------------------------
 
 \section*{1b) Cálculo de la aceleración media}
 
 Para calcular la aceleración media (\(a\)) que experimenta el patinete, podemos utilizar la fórmula de la aceleración media, que se da por:
 
 \[
-a = \frac{V - V_0}{t - t_0}
+a = \frac{\Delta_V}{\Delta_t}
 \]
-
-Donde:
-\begin{itemize}
-    \item \(\Delta V\) es la variación de la velocidad (\(V - V_0\)),
-    \item \(\Delta t\) es la variación de tiempo (\(t - t_0\)).
-\end{itemize}
 
 Sustituyendo los valores:
 
@@ -62,15 +55,9 @@ a = \frac{4.25 \, \text{m/s} - 0 \, \text{m/s}}{1.7 - 0 \, \text{s}} = \frac{4.2
 
 \subsection*{Justificación del Signo del Resultado}
 
-El signo de la aceleración es positivo, lo que indica que el patinete está acelerando. Una aceleración positiva significa que la velocidad del patinete está aumentando, lo que es coherente con el hecho de que el patinete comenzó desde el estado de inactividad y aumentó su velocidad al acelerar. Por lo tanto, la justificación del signo del resultado es que el patinete está en movimiento acelerado, saliendo del estado de reposo y aumentando su velocidad a lo largo del tiempo.
+El signo de la aceleración es positivo, lo que indica que la patineta está acelerando. Una aceleración positiva significa que la velocidad del patinete está aumentando, lo que es coherente con el hecho de que el patinete comenzó desde el estado de inactividad y aumentó su velocidad al acelerar. Por lo tanto, la justificación del signo del resultado es que el patinete está en movimiento acelerado, saliendo del estado de reposo y aumentando su velocidad a lo largo del tiempo.
 
-
-
-
-
-
-
-% section 1c
+% section 1c ----------------------------------------------------------------------------------------------------
 
 \section*{1c) Cálculo de la distancia recorrida por el patinete durante el tiempo de aceleración}
 
@@ -89,8 +76,8 @@ En este caso, estamos interesados en la variación de la posición (\(\Delta S\)
 Donde:
 \begin{itemize}
     \item \(\Delta S\) es la distancia recorrida,
-    \item \(S(0)\) es la posición inicial en t = 0 (que consideramos como cero),
-    \item \(V_0\) es la velocidad inicial (también cero, \(0 \, \text{m/s}\)),
+    \item \(S(0)\) = 0 m
+    \item \(V_0\) = 0 m/s (velocidad inicial, en reposo),
     \item \(t\) es el tiempo que el patinete estuvo acelerando (\(1,7 \, \text{s}\)),
     \item \(a\) es la aceleración (\(2,5 \, \text{m/s}^2\)).
 \end{itemize}
@@ -98,12 +85,14 @@ Donde:
 Sustituyendo los valores en la ecuación:
 
 \[
-S(1,7) = 0 + 0 \times 1,7 \text + \frac{1}{2} \times 2,5 \frac{\text{m}}{\text{s}^2} \times (1,7 \, \text{s})^2 \approx 3,61 \, \text{m}
+    S(t) = \frac{1}{2} a t^2
 \]
 
-Por lo tanto, la distancia recorrida por la patineta durante el tiempo de aceleración es aproximadamente \(3,61 \, \text{metros}\).
+\[
+    \Delta S = \frac{1}{2} \times 2.5 \, \frac{\text{m}}{\text{s}^2} \times (1.7 \, \text{s})^2 \approx \boxed{3.61 \, \text{m}}
+\]
 
-
+% section 1d ----------------------------------------------------------------------------------------------------
 
 \section*{1d) Aceleración de frenado}
 
@@ -113,11 +102,10 @@ Para calcular la aceleración de frenado (\(a_{\text{frenado}}\)) que experiment
 V^2 = V_0^2 + 2 a_{\text{frenado}} S
 \]
 
-\subsection*{Demostración de la fórmula \( V^2 = V_0^2 + 2ad \)}
+% subsection 1.1d -!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-
 
+\subsection*{1.1d) Demostración de la fórmula \( V^2 = V_0^2 + 2ad \)}
 Partimos de las definiciones de aceleración y de las ecuaciones del movimiento.
-
-\subsection*{Definiciones}
 
 \[
 a = \frac{V - V_0}{t}
@@ -126,8 +114,6 @@ a = \frac{V - V_0}{t}
 \[
 d = V_0 t + \frac{1}{2} a t^2
 \]
-
-\subsection*{Demostración}
 
 1. Reordenando la ecuación de la aceleración:
 \[
@@ -168,16 +154,9 @@ d = \frac{V_0 (V - V_0)}{a} + \frac{(V - V_0)^2}{2a}
 \boxed{ V^2=     V_0^2 + 2a\Delta S }
 \]
 `'
+% subsection 1.2d -!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-
 
-
-
-
-
-
-
-
-
-\subsection*{1d) Resolución del cálculo de la aceleración de frenado}
+\subsection*{1.2d) Resolución del cálculo de la aceleración de frenado}
 
 Para calcular la aceleración de frenado del patinete, utilizamos la ecuación de Torricelli que acabamos de demostrar:
 
@@ -199,7 +178,9 @@ Primero, convertimos la velocidad inicial \(V_0\) de km/h a m/s:
 V_0 = 19,5 \, \text{km/h} = 19,5 \times \frac{1000 \, \text{m}}{3600 \, \text{s}} \approx 5,416 \, \text{m/s}
 \]
 
+\justify
 A partir de aquí, podemos ignorar las unidades de medida, ya que todas las cantidades están en el sistema internacional. Por lo tanto, la aceleración que calcularemos también se expresará en este sistema. Al sustituir los valores en la fórmula, obtenemos:
+
 \[
 0 = 5,416^2 + 2a*11
 \]
@@ -214,15 +195,11 @@ Despejamos \(a\):
 22a = -29,340 \implies a = \frac{-29,34}{22} \approx \boxed{-1,333 \, \text{m/s}^2}
 \]
 
-Por lo tanto, la aceleración de frenada es aproximadamente \(-1,33 \, \text{m/s}^2\).
-
 \subsection*{Justificación del signo del resultado}
 
 El signo negativo de la aceleración indica que el patinete está desacelerando. Esto es coherente con el hecho de que se está deteniendo. Una aceleración negativa indica que la velocidad del patinete está disminuyendo, lo que corresponde a un proceso de frenado.
 
-
-
-
+% section 1e ----------------------------------------------------------------------------------------------------
 
 \subsection*{1e) Cálculo del tiempo que ha tardado el patinete en el apartado 1d}
 
@@ -245,16 +222,17 @@ Sustituyendo los valores:
 0 = 5,416 \, \text{m/s} + (-1,333 \, \text{m/s}^2) t 
 \]
 
-
+\justify
 A partir de aquí, podemos ignorar las unidades de medida, ya que todas las cantidades están en el sistema internacional. Por lo tanto, lo que calcularemos también se expresará en este sistema. Aislando \( t\), obtendremos:
 
 \[
 1,333 \, t = 5,416 
 \]
 \[
-t = \frac{5,416}{1,333} \approx 4,06 \, \text{s}
+t = \frac{5,416}{1,333} \approx \boxed{4,06 \, \text{s}}
 \]
 
+\justify
 Por lo tanto, el tiempo que el patinete tardó en detenerse durante el frenado es aproximadamente \( 4,06 \) segundos.
 
 \section*{2) Enunciado del Problema}
@@ -267,6 +245,8 @@ Por lo tanto, el tiempo que el patinete tardó en detenerse durante el frenado e
     }
     \label{fig:tabla}
 \end{figure}\
+
+% section 2a ----------------------------------------------------------------------------------------------------
 
 \section*{2a) Representación gráfica de la posición}
 
@@ -292,41 +272,34 @@ Por lo tanto, el tiempo que el patinete tardó en detenerse durante el frenado e
 %    \caption{Gráfico de Espacio vs Tiempo}
 %\end{figure}
 
+% section 2b ----------------------------------------------------------------------------------------------------
+
 \section*{2b) Cálculo de la velocidad media}
 
 Para calcular la velocidad media (\(v_m\)), utilizamos:
 
 \[
-v_m = \frac{\Delta x}{\Delta t}
+v_m = \frac{\Delta S}{\Delta t}
 \]
 
-donde:
-
-\begin{itemize}
-    \item \(\Delta x\) es el desplazamiento (cambio de posición) 
-    \item \(\Delta t\) es el intervalo de tiempo
-\end{itemize}
-
-Dado que la posición del coche en \(t = 0\) es \(50 \, \text{m}\) y en \(t = 20 \, \text{s}\) es \(650 \, \text{m}\):
-
-1. **Desplazamiento (\(\Delta x\))**:
+1. Desplazamiento (\(\Delta S\)):
    \[
-   \Delta x = x_{final} - x_{inicial} = 650 \, \text{m} - 50 \, \text{m} = 600 \, \text{m}
+   \Delta S = S_{final} - S_{inicial} = 650 \, \text{m} - 50 \, \text{m} = 600 \, \text{m}
    \]
 
-2. **Intervalo de tiempo (\(\Delta t\))**:
+2. Intervalo de tiempo (\(\Delta t\)):
    \[
    \Delta t = t_{final} - t_{inicial} = 20 \, \text{s} - 0 \, \text{s} = 20 \, \text{s}
    \]
 
-3. **Cálculo de la velocidad media**:
-   \[
-   v_m = \frac{600 \, \text{m}}{20 \, \text{s}} = 30 \, \text{m/s}
-   \]
+3. Cálculo de la velocidad media m/s:
+\[
+v_m = \frac{600 \, \text{m}}{20 \, \text{s}} = \boxed{30 \, \text{m/s}}
+\]
 
 Ahora, para convertir a km/h:
 \[
-v_m = 30 \, \text{m/s} \times \frac{3600 \, \text{s}}{1000 \, \text{m}} = 108 \, \text{km/h}
+v_m = 30 \, \text{m/s} \times \frac{3600 \, \text{s}}{1000 \, \text{m}} = \boxed{108 \, \text{km/h}}
 \]
 
 Por lo tanto, la velocidad media es:
@@ -335,5 +308,65 @@ Por lo tanto, la velocidad media es:
     \item \(v_m = 30 \, \text{m/s}\)
     \item \(v_m = 108 \, \text{km/h}\)
 \end{itemize}
+
+% section 2c ----------------------------------------------------------------------------------------------------
+
+\section*{2c) Tipo de Movimiento}
+
+\subsection*{Análisis de la velocidad media}
+
+La velocidad media calculada es de \(30 \, \text{m/s}\). Observando los datos de posición:
+
+\begin{itemize}
+    \item Entre \(t = 0\) y \(t = 5\) segundos, el coche se desplaza de \(50 \, \text{m}\) a \(200 \, \text{m}\) (desplazamiento de \(150 \, \text{m}\)).
+    \item Entre \(t = 5\) y \(t = 10\) segundos, va de \(200 \, \text{m}\) a \(350 \, \text{m}\) (también \(150 \, \text{m}\)).
+    \item Entre \(t = 10\) y \(t = 15\) segundos, se mueve de \(350 \, \text{m}\) a \(500 \, \text{m}\) (otra vez \(150 \, \text{m}\)).
+    \item Finalmente, entre \(t = 15\) y \(t = 20\) segundos, va de \(500 \, \text{m}\) a \(650 \, \text{m}\) (nuevamente \(150 \, \text{m}\)).
+\end{itemize}
+
+\subsection*{Explicación:}
+
+Aunque el coche parece tener un movimiento uniforme entre los puntos observados, no se puede garantizar que sea así, ya que los datos son puntos aislados. La representación lineal solicitada en el ejercicio 1a) no implica un movimiento constante.
+Pero creo que para los fines de este ejercicio, la respuesta esperada sería: "Sí, es MRU."
+
+\begin{itemize}
+    \item Tipo de Movimiento: \textbf{M.RU.} (Movimiento Recto Uniforme)
+    \item Razón: La variación de espacio-tiempo es uniforme. Por lo tanto, la velocidad media es constante en cada intervalo de tiempo, lo que significa que no hay aceleración (\(a = 0 \, \text{m/s}^2\)) y, por lo tanto, \textbf{el movimiento es uniforme y no variado}, porque no tiene aceleración. 
+\end{itemize}
+
+% section 2d ----------------------------------------------------------------------------------------------------
+
+\section*{2d) Cálculo de la posición del coche a los 90 segundos}
+
+Dado que el coche tiene una posición inicial de \(S_0 = 50 \, \text{m}\) y una velocidad constante de \(V_0 = 30 \, \text{m/s}\), podemos utilizar la fórmula de la posición en función del tiempo:
+
+\[
+S(t) = S_0 + V_0 \cdot t
+\]
+
+Sustituimos \(t = 90 \, \text{segundos}\):
+
+\[
+S(90) = 50 \, \text{m} + 30 \, \text{m/s} \times 90 \, \text{s}
+\]
+
+Calculando:
+
+\[
+S(90) = 50 + 2700 = \boxed{2750 \, \text{m}}
+\]
+
+% section 2e ----------------------------------------------------------------------------------------------------
+
+\section*{2e) Cálculo de el desplazamiento del coche}
+
+Dado que \( S(90) = 2750 \, \text{m} \) y \( S_0 = 50 \, \text{m} \), podemos calcular el desplazamiento \(\Delta S\):
+
+\[
+\Delta S = S - S_0 = 2750 \, \text{m} - 50 \, \text{m} = \boxed{2700 \, \text{m}}
+\]
+
+\justify
+Por lo tanto, el coche se ha desplazado \( 2700 \, \text{m} \) desde su posición inicial.
 
 \end{document}
