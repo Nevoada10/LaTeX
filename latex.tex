@@ -1,5 +1,9 @@
 \documentclass{article}
+\usepackage{graphicx}
 \usepackage{amsmath}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{float} % Add this line
 
 \begin{document}
 
@@ -201,7 +205,7 @@ A partir de aquí, podemos ignorar las unidades de medida, ya que todas las cant
 \]
 
 \[
-0 = 29.340 + 22a
+0 = 29,340 + 22a
 \]
 
 Despejamos \(a\):
@@ -241,7 +245,8 @@ Sustituyendo los valores:
 0 = 5,416 \, \text{m/s} + (-1,333 \, \text{m/s}^2) t 
 \]
 
-Aislando \( t (S.I) \), obtendremos:
+
+A partir de aquí, podemos ignorar las unidades de medida, ya que todas las cantidades están en el sistema internacional. Por lo tanto, lo que calcularemos también se expresará en este sistema. Aislando \( t\), obtendremos:
 
 \[
 1,333 \, t = 5,416 
@@ -252,6 +257,83 @@ t = \frac{5,416}{1,333} \approx 4,06 \, \text{s}
 
 Por lo tanto, el tiempo que el patinete tardó en detenerse durante el frenado es aproximadamente \( 4,06 \) segundos.
 
+\section*{2) Enunciado del Problema}
 
+
+\begin{figure}[h] % 'h' significa aquí; también puedes usar 't' para arriba, 'b' para abajo
+    \centering
+    \includegraphics[width=0.7\textwidth]{tabla.png} % Cambia a tu nombre de archivo
+    \caption{La tabla anterior muestra la posición de un coche en función del tiempo en un movimiento rectilíneo.
+    }
+    \label{fig:tabla}
+\end{figure}\
+
+\section*{2a) Representación gráfica de la posición}
+
+%\begin{figure}[h]
+%    \centering
+%    \begin{tikzpicture}
+%        \begin{axis}[
+%            xlabel={Tiempo (s)},
+%            ylabel={Espacio (m)},
+%            grid=both,
+%            title={Gráfico de Espacio vs Tiempo},
+%            xmin=0, xmax=20,
+%            ymin=0, ymax=700,
+%            xtick={0,5,...,20},
+%            ytick={0,100,...,700},
+%            legend pos=north west,
+%        ]
+%        % Data points
+%        \addplot coordinates {(0,50) (5,200) (10,350) (15,500) (20,650)};
+%        \addlegendentry{Trayectoria}
+%        \end{axis}
+%    \end{tikzpicture}
+%    \caption{Gráfico de Espacio vs Tiempo}
+%\end{figure}
+
+\section*{2b) Cálculo de la velocidad media}
+
+Para calcular la velocidad media (\(v_m\)), utilizamos:
+
+\[
+v_m = \frac{\Delta x}{\Delta t}
+\]
+
+donde:
+
+\begin{itemize}
+    \item \(\Delta x\) es el desplazamiento (cambio de posición) 
+    \item \(\Delta t\) es el intervalo de tiempo
+\end{itemize}
+
+Dado que la posición del coche en \(t = 0\) es \(50 \, \text{m}\) y en \(t = 20 \, \text{s}\) es \(650 \, \text{m}\):
+
+1. **Desplazamiento (\(\Delta x\))**:
+   \[
+   \Delta x = x_{final} - x_{inicial} = 650 \, \text{m} - 50 \, \text{m} = 600 \, \text{m}
+   \]
+
+2. **Intervalo de tiempo (\(\Delta t\))**:
+   \[
+   \Delta t = t_{final} - t_{inicial} = 20 \, \text{s} - 0 \, \text{s} = 20 \, \text{s}
+   \]
+
+3. **Cálculo de la velocidad media**:
+   \[
+   v_m = \frac{600 \, \text{m}}{20 \, \text{s}} = 30 \, \text{m/s}
+   \]
+
+Ahora, para convertir a km/h:
+\[
+v_m = 30 \, \text{m/s} \times \frac{3600 \, \text{s}}{1000 \, \text{m}} = 108 \, \text{km/h}
+\]
+
+Por lo tanto, la velocidad media es:
+
+\begin{itemize}
+    \item \(v_m = 30 \, \text{m/s}\)
+    \item \(v_m = 108 \, \text{km/h}\)
+\end{itemize}
 
 \end{document}
