@@ -2,6 +2,11 @@
 \usepackage{amsmath}
 
 \begin{document}
+
+\section*{1) Enunciado del Problema}
+
+Un chico de 21 años se dispone a circular por el carril bici del Paralelo de Barcelona con un patinete eléctrico. El patinete tiene un ordenador interno para conocer en todo momento la velocidad y el estado de la batería. La autonomía que permite la batería es de \textbf{25 km}, la velocidad máxima es de \textbf{25 km/h} y tiene 3 tipos de sistemas de frenos. El chico está en un semáforo parado, sube al patinete inicialmente en reposo y cuando el semáforo se pone en verde, es capaz de acelerar de \textbf{0 km/h} a \textbf{15,3 km/h} en \textbf{1,7} segundos en un tramo sin fricción.
+
 % section 1a
 
 \section*{1a) Conversiones}
@@ -14,6 +19,11 @@
     \item Tiempo: \(1.7 \, \text{segundos} = 1.7 \, \text{s}\)
 \end{itemize}
 
+
+
+
+
+
 % section 1b
 
 \section*{1b) Cálculo de la aceleración media}
@@ -24,7 +34,7 @@ Para calcular la aceleración media (\(a\)) que experimenta el patinete, podemos
 a = \frac{V - V_0}{t - t_0}
 \]
 
-donde:
+Donde:
 \begin{itemize}
     \item \(\Delta V\) es la variación de la velocidad (\(V - V_0\)),
     \item \(\Delta t\) es la variación de tiempo (\(t - t_0\)).
@@ -50,35 +60,198 @@ a = \frac{4.25 \, \text{m/s} - 0 \, \text{m/s}}{1.7 - 0 \, \text{s}} = \frac{4.2
 
 El signo de la aceleración es positivo, lo que indica que el patinete está acelerando. Una aceleración positiva significa que la velocidad del patinete está aumentando, lo que es coherente con el hecho de que el patinete comenzó desde el estado de inactividad y aumentó su velocidad al acelerar. Por lo tanto, la justificación del signo del resultado es que el patinete está en movimiento acelerado, saliendo del estado de reposo y aumentando su velocidad a lo largo del tiempo.
 
-\section*{1c) Cálculo de la distancia recorrida por el patinete durante el tiempo que ha acelerado. } 
 
-Para calcular la distancia recorrida por la patineta durante el tiempo que ha acelerado, se puede utilizar la fórmula de la distancia recorrida en un movimiento uniformemente acelerado:
+
+
+
+
+
+% section 1c
+
+\section*{1c) Cálculo de la distancia recorrida por el patinete durante el tiempo de aceleración}
+
+Para calcular la distancia recorrida por el patinete durante el tiempo en que estuvo acelerando, utilizamos la ecuación del movimiento uniformemente acelerado:
+
+\[
+S(t) = S_0 + V_0 t + \frac{1}{2} a t^2
+\]
+
+En este caso, estamos interesados en la variación de la posición (\(\Delta S\)), que se calcula como:
+
+\[
+\Delta S = S(t) - S(0)
+\]
+
+Donde:
+\begin{itemize}
+    \item \(\Delta S\) es la distancia recorrida,
+    \item \(S(0)\) es la posición inicial en t = 0 (que consideramos como cero),
+    \item \(V_0\) es la velocidad inicial (también cero, \(0 \, \text{m/s}\)),
+    \item \(t\) es el tiempo que el patinete estuvo acelerando (\(1,7 \, \text{s}\)),
+    \item \(a\) es la aceleración (\(2,5 \, \text{m/s}^2\)).
+\end{itemize}
+
+Sustituyendo los valores en la ecuación:
+
+\[
+S(1,7) = 0 + 0 \times 1,7 \text + \frac{1}{2} \times 2,5 \frac{\text{m}}{\text{s}^2} \times (1,7 \, \text{s})^2 \approx 3,61 \, \text{m}
+\]
+
+Por lo tanto, la distancia recorrida por la patineta durante el tiempo de aceleración es aproximadamente \(3,61 \, \text{metros}\).
+
+
+
+\section*{1d) Aceleración de frenado}
+
+Para calcular la aceleración de frenado (\(a_{\text{frenado}}\)) que experimenta el patinete al detenerse, podemos utilizar la ecuación de Torricelli dada por:
+
+\[
+V^2 = V_0^2 + 2 a_{\text{frenado}} S
+\]
+
+\subsection*{Demostración de la fórmula \( V^2 = V_0^2 + 2ad \)}
+
+Partimos de las definiciones de aceleración y de las ecuaciones del movimiento.
+
+\subsection*{Definiciones}
+
+\[
+a = \frac{V - V_0}{t}
+\]
 
 \[
 d = V_0 t + \frac{1}{2} a t^2
 \]
 
-Donde:
+\subsection*{Demostración}
 
-\begin{itemize}
-    \item \(d\) es la distancia recorrida
-    \item \(V_0\) es la velocidad inicial (que es \(0 \, \text{m/s}\) en este caso)
-    \item \(t\) es el tiempo que ha acelerado (\(1,7 \, \text{s}\))
-    \item \(a\) es la aceleración (\(2,5 \, \text{m/s}^2\))
-\end{itemize}
-
-Sustituyendo los valores, obtenemos:
-
+1. Reordenando la ecuación de la aceleración:
 \[
-d = 0 \, \text{m/s} \times 1,7 \, \text{s} + \frac{1}{2} \times 2,5 \, \text{m/s}^2 \times (1,7 \, \text{s})^2 \approx 3,61 \, \text{m}
+V - V_0 = a t \implies t = \frac{V - V_0}{a}
 \]
 
-Por lo tanto, la distancia recorrida por la patineta durante el tiempo que ha acelerado es aproximadamente de \(3,61 \, \text{metros}\).
+2. Sustituyendo \(t\) en la fórmula de la distancia:
+\[
+d = V_0 t + \frac{1}{2} a t^2
+\]
+\[
+d = V_0 \left(\frac{V - V_0}{a}\right) + \frac{1}{2} a \left(\frac{V - V_0}{a}\right)^2
+\]
+
+3. Desarollando la ecuación:
+\[
+d = \frac{V_0 (V - V_0)}{a} + \frac{(V - V_0)^2}{2a}
+\]
+
+4. Multiplicando toda la ecuación por \(2a\) para eliminar los denominadores:
+\[
+2ad = 2V_0 (V - V_0) + (V - V_0)^2
+\]
+\[
+2ad = (2V_0 V - 2V_0^2) + (V^2 - 2V_0 V_0 - V_0^2) 
+\]
+
+5. Simplificando la ecuación:
+\[
+2ad = V^2 + (2V_0^2 - V_0^2) 
+\]
+
+\[
+2ad = V^2 - V_0^2
+\]
+
+\[
+\boxed{ V^2=     V_0^2 + 2a\Delta S }
+\]
+`'
+
+
+
+
+
+
+
+
+
+\subsection*{1d) Resolución del cálculo de la aceleración de frenado}
+
+Para calcular la aceleración de frenado del patinete, utilizamos la ecuación de Torricelli que acabamos de demostrar:
+
+\[
+V^2 = V_0^2 + 2ad
+\]
+
+Donde:
+\begin{itemize}
+    \item \(V\) es la velocidad final (\(0 \, \text{m/s}\), ya que el patinete se detiene),
+    \item \(V_0\) es la velocidad inicial (\(19,5 \, \text{km/h}\)),
+    \item \(a\) es la aceleración (que deseamos calcular),
+    \item \(d\) es la distancia recorrida durante la frenada (\(11 \, \text{m}\)).
+\end{itemize}
+
+Primero, convertimos la velocidad inicial \(V_0\) de km/h a m/s:
+
+\[
+V_0 = 19,5 \, \text{km/h} = 19,5 \times \frac{1000 \, \text{m}}{3600 \, \text{s}} \approx 5,416 \, \text{m/s}
+\]
+
+A partir de aquí, podemos ignorar las unidades de medida, ya que todas las cantidades están en el sistema internacional. Por lo tanto, la aceleración que calcularemos también se expresará en este sistema. Al sustituir los valores en la fórmula, obtenemos:
+\[
+0 = 5,416^2 + 2a*11
+\]
+
+\[
+0 = 29.340 + 22a
+\]
+
+Despejamos \(a\):
+
+\[
+22a = -29,340 \implies a = \frac{-29,34}{22} \approx \boxed{-1,333 \, \text{m/s}^2}
+\]
+
+Por lo tanto, la aceleración de frenada es aproximadamente \(-1,33 \, \text{m/s}^2\).
+
+\subsection*{Justificación del signo del resultado}
+
+El signo negativo de la aceleración indica que el patinete está desacelerando. Esto es coherente con el hecho de que se está deteniendo. Una aceleración negativa indica que la velocidad del patinete está disminuyendo, lo que corresponde a un proceso de frenado.
+
+
+
+
+
+\subsection*{1e) Cálculo del tiempo que ha tardado el patinete en el apartado 1d}
+
+
+\begin{itemize}
+    \item Velocidad inicial (\( V_0 \)): \( 19,5 \, \text{km/h} = 5,416 \, \text{m/s} \)
+    \item Velocidad final (\( V \)): \( 0 \, \text{m/s} \)
+    \item Aceleración (\( a \)): \( -1,333 \, \text{m/s}^2 \)
+\end{itemize}
+
+Usamos la fórmula:
+
+\[
+V = V_0 + at
+\]
+
+Sustituyendo los valores:
+
+\[
+0 = 5,416 \, \text{m/s} + (-1,333 \, \text{m/s}^2) t 
+\]
+
+Aislando \( t (S.I) \), obtendremos:
+
+\[
+1,333 \, t = 5,416 
+\]
+\[
+t = \frac{5,416}{1,333} \approx 4,06 \, \text{s}
+\]
+
+Por lo tanto, el tiempo que el patinete tardó en detenerse durante el frenado es aproximadamente \( 4,06 \) segundos.
+
+
 
 \end{document}
-
-
-
-
-\end{document}
-

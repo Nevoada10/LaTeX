@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.19)  19 OCT 2024 22:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.19)  20 OCT 2024 09:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -109,36 +109,36 @@ LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 
-Overfull \hbox (2.58386pt too wide) in paragraph at lines 51--52
+Overfull \hbox (2.58386pt too wide) in paragraph at lines 61--62
 \OT1/cmr/m/n/10 El signo de la acel-eraci^^Son es pos-i-tivo, lo que in-dica que el patinete est^^Sa acelerando.
- []
-
-
-Overfull \hbox (7.4146pt too wide) in paragraph at lines 53--53
-[]\OT1/cmr/bx/n/14.4 1c) C^^Salculo de la dis-tan-cia recor-rida por el patinete
  []
 
 [1
 
-{/usr/local/texlive/2024basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./latex.aux)
+{/usr/local/texlive/2024basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (7.4146pt too wide) in paragraph at lines 71--71
+[]\OT1/cmr/bx/n/14.4 1c) C^^Salculo de la dis-tan-cia recor-rida por el patinete
+ []
+
+[2] [3] [4] [5] (./latex.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1153 strings out of 475567
- 17716 string characters out of 5777888
- 1936187 words of memory out of 5000000
- 23364 multiletter control sequences out of 15000+600000
- 560068 words of font info for 43 fonts, out of 8000000 for 9000
+ 1174 strings out of 475567
+ 17931 string characters out of 5777888
+ 1937187 words of memory out of 5000000
+ 23376 multiletter control sequences out of 15000+600000
+ 563488 words of font info for 55 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 56i,6n,65p,562b,122s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </Users/urielnevessilva/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on latex.pdf (2 pages, 72931 bytes).
+ 56i,6n,65p,684b,179s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/urielnevessilva/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on latex.pdf (5 pages, 120888 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
+ 75 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
