@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1730826041.00903 "/Users/urielnevessilva/PycharmProjects/LaTeX/Uriel_Neves_Silva_BTX_FS_L02ACR1.tex/Uriel_Neves_Silva_BTX_FS_L02ACR1.tex" "Uriel_Neves_Silva_BTX_FS_L02ACR1.pdf" "Uriel_Neves_Silva_BTX_FS_L02ACR1" 1730826041.88768 0
+["pdflatex"] 1730826314.55532 "/Users/urielnevessilva/PycharmProjects/LaTeX/Uriel_Neves_Silva_BTX_FS_L02ACR1.tex/Uriel_Neves_Silva_BTX_FS_L02ACR1.tex" "Uriel_Neves_Silva_BTX_FS_L02ACR1.pdf" "Uriel_Neves_Silva_BTX_FS_L02ACR1" 1730826315.44826 0
   "/Users/urielnevessilva/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk" 1730821195.49362 25396 39dfb1d75844e200816cdd14687140a0 ""
   "/Users/urielnevessilva/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk" 1730821194.64919 31928 0ffc30d19f8317418779d59f437e951c ""
   "/Users/urielnevessilva/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk" 1730821196.30052 40112 35f1c69df72b751447e1e38c89564aad ""
@@ -9,7 +9,7 @@
   "/Users/urielnevessilva/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk" 1730826040.8863 34296 0e224715c97cd1fb2e98ff00527ef82d ""
   "/Users/urielnevessilva/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk" 1730824745.03338 42496 b183dea0ef099773f488131dd28c5b05 ""
   "/Users/urielnevessilva/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1730818462.47654 11524 e8c82444f897d941e884712291e926a9 ""
-  "/Users/urielnevessilva/PycharmProjects/LaTeX/Uriel_Neves_Silva_BTX_FS_L02ACR1.tex/Uriel_Neves_Silva_BTX_FS_L02ACR1.tex" 1730826039.31491 14242 d8f410cfeabf3bdb728a33e9286c0814 ""
+  "/Users/urielnevessilva/PycharmProjects/LaTeX/Uriel_Neves_Silva_BTX_FS_L02ACR1.tex/Uriel_Neves_Silva_BTX_FS_L02ACR1.tex" 1730826314.32681 14242 d8f410cfeabf3bdb728a33e9286c0814 ""
   "/usr/local/texlive/2024basic/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1136768653 3584 2d666ecf6d466d8b007246bc2f94d9da ""
   "/usr/local/texlive/2024basic/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
   "/usr/local/texlive/2024basic/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm" 1136768653 3584 13049b61b922a28b158a38aeff75ee9b ""
@@ -173,8 +173,8 @@
   "/usr/local/texlive/2024basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1729367485.25757 79187 3707ba1a1c2304ab6bb6cb291e5e6f79 ""
   "/usr/local/texlive/2024basic/texmf-var/web2c/pdftex/pdflatex.fmt" 1729367462 7536455 398e0517640e6f6e10de21b08207b1d2 ""
   "/usr/local/texlive/2024basic/texmf.cnf" 1710011638 628 8b896f7d9d41b43f4346b9091e52171f ""
-  "Uriel_Neves_Silva_BTX_FS_L02ACR1.aux" 1730826041.78685 492 d0d7273f581a174a6c0566d250fe9427 "pdflatex"
-  "Uriel_Neves_Silva_BTX_FS_L02ACR1.tex" 1730826039.31491 14242 d8f410cfeabf3bdb728a33e9286c0814 ""
+  "Uriel_Neves_Silva_BTX_FS_L02ACR1.aux" 1730826315.34672 492 d0d7273f581a174a6c0566d250fe9427 "pdflatex"
+  "Uriel_Neves_Silva_BTX_FS_L02ACR1.tex" 1730826314.32681 14242 d8f410cfeabf3bdb728a33e9286c0814 ""
   "grafico.png" 1730818615.25838 111675 f9f30d6f2bec3a8b280cfa27a8cdf98a ""
   "tabla.png" 1729414082.82459 7175 ad40ddefe1fad2da2c46e9fe9a0ed9f5 ""
   (generated)
