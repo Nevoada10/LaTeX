@@ -18,13 +18,13 @@ Un chico de \textbf{21 años}  se dispone a circular por el carril bici del Para
 
 \begin{itemize}
     \item Edad: \[
-21 \, \text{años} = 21 \times \frac{365.25 \, \text{días}}{1 \, \text{año}} \times \frac{24 \, \text{horas}}{1 \, \text{día}} \times \frac{60 \, \text{minutos}}{1 \, \text{hora}} \times \frac{60 \, \text{segundos}}{1 \, \text{minuto}} = 662709600\, \text{segundos}
+21 \, \text{años} = 21 \times \frac{365.25 \, \text{días}}{1 \, \text{año}} \times \frac{24 \, \text{horas}}{1 \, \text{día}} \times \frac{60 \, \text{minutos}}{1 \, \text{hora}} \times \frac{60 \, \text{segundos}}{1 \, \text{minuto}} = \boxed{662709600\, \text{s}}
 \]
-    \item Autonomía: \(25 \, \text{km} = 25 \times 1000 \, \text{m} = 25000 \, \text{m}\)
-    \item \(V_{\text{max}}: 25 \, \text{km/h} = 6.94 \, \text{m/s} \left( 25 \, \text{km/h} \times \frac{1000 \, \text{m}}{1 \, \text{km}} \times \frac{1 \, \text{h}}{3600 \, \text{s}} \right)\)
-    \item \(V_0: 0 \, \text{km/h} = 0 \, \text{m/s}\)
-    \item \(V: 15.3 \, \text{km/h} = 4.25 \, \text{m/s} \left( 15.3 \, \text{km/h} \times \frac{1000 \, \text{m}}{1 \, \text{km}} \times \frac{1 \, \text{h}}{3600 \, \text{s}} \right)\)
-    \item Tiempo: \(1.7 \, \text{segundos} = 1.7 \, \text{s}\)
+    \item Autonomía: \(25 \, \text{km} = 25 \text{km}\times \frac{1000 \text{m}}{1 \text{km}}{} \, = \boxed{25\,000 \, \text{m}}\)
+    \item \(V_{\text{max}}: 25 \, \text{km/h} = 25\, \text{km/h} \times \frac{1000\,\text{m}}{1\,\text{km}} \times \frac{1\,\text{h}}{3600\,\text{s}} \, \approx \boxed{6,94 \, \text{m/s}} \)
+    \item \(V_0: 0 \, \text{km/h} = \boxed{0 \, \text{m/s}}\)
+    \item \(V: 15,3 \, \text{km/h} = 15,3\, \text{km/h} \times \frac{1000\,\text{m}}{1\,\text{km}} \times \frac{1\,\text{h}}{3600\,\text{s}} \, = \boxed{4,25 \, \text{m/s}} \)
+    \item Tiempo: \(1,7 \, \text{segundos} = \boxed{1.7 \, \text{s}}\)
 \end{itemize}
 
 % section 1b ----------------------------------------------------------------------------------------------------
@@ -50,7 +50,7 @@ Sustituyendo los valores:
 Ahora podemos calcular:
 
 \[
-a = \frac{4.25 \, \text{m/s} - 0 \, \text{m/s}}{1.7 - 0 \, \text{s}} = \frac{4.25 \, \text{m/s}}{1.7 \, \text{s}} = 2.5 \, \text{m/s}^2
+a = \frac{4.25 \, \text{m/s} - 0 \, \text{m/s}}{1.7 - 0 \, \text{s}} = \frac{4.25 \, \text{m/s}}{1.7 \, \text{s}} = \boxed {2.5 \, \text{m/s}^2}
 \]
 
 \subsection*{Justificación del Signo del Resultado}
@@ -250,27 +250,13 @@ Por lo tanto, el tiempo que el patinete tardó en detenerse durante el frenado e
 
 \section*{2a) Representación gráfica de la posición}
 
-%\begin{figure}[h]
-%    \centering
-%    \begin{tikzpicture}
-%        \begin{axis}[
-%            xlabel={Tiempo (s)},
-%            ylabel={Espacio (m)},
-%            grid=both,
-%            title={Gráfico de Espacio vs Tiempo},
-%            xmin=0, xmax=20,
-%            ymin=0, ymax=700,
-%            xtick={0,5,...,20},
-%            ytick={0,100,...,700},
-%            legend pos=north west,
-%        ]
-%        % Data points
-%        \addplot coordinates {(0,50) (5,200) (10,350) (15,500) (20,650)};
-%        \addlegendentry{Trayectoria}
-%        \end{axis}
-%    \end{tikzpicture}
-%    \caption{Gráfico de Espacio vs Tiempo}
-%\end{figure}
+\begin{figure}[h] % 'h' significa aquí; también puedes usar 't' para arriba, 'b' para abajo
+    \centering
+    \includegraphics[width=0.7\textwidth]{grafico.png} % Cambia a tu nombre de archivo
+    \caption{La gráfica anterior muestra la posición de un coche en función del tiempo en un movimiento rectilíneo.
+    }
+    \label{fig:grafico}
+\end{figure}\
 
 % section 2b ----------------------------------------------------------------------------------------------------
 
@@ -330,7 +316,7 @@ Aunque el coche parece tener un movimiento uniforme entre los puntos observados,
 Pero creo que para los fines de este ejercicio, la respuesta esperada sería: "Sí, es MRU."
 
 \begin{itemize}
-    \item Tipo de Movimiento: \textbf{M.RU.} (Movimiento Recto Uniforme)
+    \item Tipo de Movimiento: \textbf{M.R.U} (Movimiento Recto Uniforme)
     \item Razón: La variación de espacio-tiempo es uniforme. Por lo tanto, la velocidad media es constante en cada intervalo de tiempo, lo que significa que no hay aceleración (\(a = 0 \, \text{m/s}^2\)) y, por lo tanto, \textbf{el movimiento es uniforme y no variado}, porque no tiene aceleración. 
 \end{itemize}
 
