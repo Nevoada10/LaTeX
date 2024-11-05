@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/urielnevessilva/PycharmProjects/LaTeX/Uriel_Neves_Silva_BTX_FS_L02ACR1.pdf",
+      "program": "/Users/urielnevessilva/PycharmProjects/LaTeX/Uriel_Neves_Silva_BTX_FS_L02ACR1.pdf/build/Debug/outDebug"
+    }
+  ]
+}
