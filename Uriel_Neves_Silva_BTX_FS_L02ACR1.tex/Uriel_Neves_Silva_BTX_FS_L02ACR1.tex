@@ -1,20 +1,49 @@
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{pgfplots}
-\usepackage{ragged2e}
+\usepackage{tikz} % Ensure TikZ is included
 \pgfplotsset{compat=1.18}
-\usepackage{float} % Add this line
+\usepackage{ragged2e}
+\usepackage{float}
 
 \begin{document}
 
-\section*{1) Enunciado del Problema}
+% Informação da Tarefa na primeira página
+\begin{titlepage}
+    \centering
+    {\LARGE Tarea: L02ACR1\_Tramesa de fitxers d'activitats avaluables \par}
+    \vspace{1.5cm} % Espaço vertical
+    {\Large Nombre: Uriel Neves Silva \par}
+    \vspace{0.5cm} % Espaço vertical
+    {\large Fecha: 5 nov 2024 \par}
+    \vspace{2cm} % Espaço vertical antes do texto justificado
+ 
+Estimado/a profesor/a,
+
+   \justify
+Espero que este mensaje le encuentre bien. Me gustaría explicarle que he optado por redactar mi documento en español debido a que no hablo catalán. Aunque estoy consciente de la importancia del uso del idioma local, me encuentro en una situación en la que estoy exento del examen de catalán.
+   \justify
+Agradezco su comprensión y apoyo en este asunto, y espero que esto no represente un inconveniente. Mi objetivo es comunicar mis ideas de manera clara y precisa, y estoy comprometido con el aprendizaje y el desarrollo académico en su clase.
+
+\begin{center}
+    
+Muchas gracias por su atención. \\
+
+Atentamente
+Uriel
+\end{center}
+
+\end{titlepage}
+
+\section*{1 - Enunciado del Problema} 
 
 Un chico de \textbf{21 años}  se dispone a circular por el carril bici del Paralelo de Barcelona con un patinete eléctrico. El patinete tiene un ordenador interno para conocer en todo momento la velocidad y el estado de la batería. La autonomía que permite la batería es de \textbf{25 km}, la velocidad máxima es de \textbf{25 km/h} y tiene 3 tipos de sistemas de frenos. El chico está en un semáforo parado, sube al patinete inicialmente en reposo y cuando el semáforo se pone en verde, es capaz de acelerar de \textbf{0 km/h} a \textbf{15,3 km/h} en \textbf{1,7} segundos en un tramo sin fricción.
 
 % section 1a ----------------------------------------------------------------------------------------------------
 
-\section*{1a) Conversiones de Unidades S.I}
+\section*{1a - Conversiones de Unidades S.I}
 
 \begin{itemize}
     \item Edad: \[
@@ -29,7 +58,7 @@ Un chico de \textbf{21 años}  se dispone a circular por el carril bici del Para
 
 % section 1b ----------------------------------------------------------------------------------------------------
 
-\section*{1b) Cálculo de la aceleración media}
+\section*{1b - Cálculo de la aceleración media}
 
 Para calcular la aceleración media (\(a\)) que experimenta el patinete, podemos utilizar la fórmula de la aceleración media, que se da por:
 
@@ -59,7 +88,7 @@ El signo de la aceleración es positivo, lo que indica que la patineta está ace
 
 % section 1c ----------------------------------------------------------------------------------------------------
 
-\section*{1c) Cálculo de la distancia recorrida por el patinete durante el tiempo de aceleración}
+\section*{1c - Cálculo de la distancia recorrida por el patinete durante el tiempo de aceleración}
 
 Para calcular la distancia recorrida por el patinete durante el tiempo en que estuvo acelerando, utilizamos la ecuación del movimiento uniformemente acelerado:
 
@@ -94,7 +123,7 @@ Sustituyendo los valores en la ecuación:
 
 % section 1d ----------------------------------------------------------------------------------------------------
 
-\section*{1d) Aceleración de frenado}
+\section*{1d - Aceleración de frenado}
 
 Para calcular la aceleración de frenado (\(a_{\text{frenado}}\)) que experimenta el patinete al detenerse, podemos utilizar la ecuación de Torricelli dada por:
 
@@ -104,7 +133,7 @@ V^2 = V_0^2 + 2 a_{\text{frenado}} S
 
 % subsection 1.1d -!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-
 
-\subsection*{1.1d) Demostración de la fórmula \( V^2 = V_0^2 + 2ad \)}
+\subsection*{1.1d - Demostración de la fórmula \( V^2 = V_0^2 + 2ad \)}
 Partimos de las definiciones de aceleración y de las ecuaciones del movimiento.
 
 \[
@@ -156,7 +185,7 @@ d = \frac{V_0 (V - V_0)}{a} + \frac{(V - V_0)^2}{2a}
 `'
 % subsection 1.2d -!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-
 
-\subsection*{1.2d) Resolución del cálculo de la aceleración de frenado}
+\subsection*{1.2d - Resolución del cálculo de la aceleración de frenado}
 
 Para calcular la aceleración de frenado del patinete, utilizamos la ecuación de Torricelli que acabamos de demostrar:
 
@@ -201,7 +230,7 @@ El signo negativo de la aceleración indica que el patinete está desacelerando.
 
 % section 1e ----------------------------------------------------------------------------------------------------
 
-\subsection*{1e) Cálculo del tiempo que ha tardado el patinete en el apartado 1d}
+\subsection*{1e - Cálculo del tiempo que ha tardado el patinete en el apartado 1d}
 
 
 \begin{itemize}
@@ -235,7 +264,7 @@ t = \frac{5,416}{1,333} \approx \boxed{4,06 \, \text{s}}
 \justify
 Por lo tanto, el tiempo que el patinete tardó en detenerse durante el frenado es aproximadamente \( 4,06 \) segundos.
 
-\section*{2) Enunciado del Problema}
+\section*{2 - Enunciado del Problema}
 
 
 \begin{figure}[h] % 'h' significa aquí; también puedes usar 't' para arriba, 'b' para abajo
@@ -248,19 +277,20 @@ Por lo tanto, el tiempo que el patinete tardó en detenerse durante el frenado e
 
 % section 2a ----------------------------------------------------------------------------------------------------
 
-\section*{2a) Representación gráfica de la posición}
+\section*{2a - Representación gráfica de la posición}
 
-\begin{figure}[h] % 'h' significa aquí; también puedes usar 't' para arriba, 'b' para abajo
+\begin{figure}[H] % 'H' significa aquí; también puedes usar 't' para arriba, 'b' para abajo
     \centering
     \includegraphics[width=0.7\textwidth]{grafico.png} % Cambia a tu nombre de archivo
-    \caption{La gráfica anterior muestra la posición de un coche en función del tiempo en un movimiento rectilíneo.
+    \caption{La posición de un coche en función del tiempo en un movimiento rectilíneo.
     }
     \label{fig:grafico}
 \end{figure}\
 
 % section 2b ----------------------------------------------------------------------------------------------------
 
-\section*{2b) Cálculo de la velocidad media}
+
+\section*{2b - Cálculo de la velocidad media}
 
 Para calcular la velocidad media (\(v_m\)), utilizamos:
 
@@ -297,7 +327,7 @@ Por lo tanto, la velocidad media es:
 
 % section 2c ----------------------------------------------------------------------------------------------------
 
-\section*{2c) Tipo de Movimiento}
+\section*{2c - Tipo de Movimiento}
 
 \subsection*{Análisis de la velocidad media}
 
@@ -322,7 +352,7 @@ Pero creo que para los fines de este ejercicio, la respuesta esperada sería: "S
 
 % section 2d ----------------------------------------------------------------------------------------------------
 
-\section*{2d) Cálculo de la posición del coche a los 90 segundos}
+\section*{2d - Cálculo de la posición del coche a los 90 segundos}
 
 Dado que el coche tiene una posición inicial de \(S_0 = 50 \, \text{m}\) y una velocidad constante de \(V_0 = 30 \, \text{m/s}\), podemos utilizar la fórmula de la posición en función del tiempo:
 
@@ -344,7 +374,7 @@ S(90) = 50 + 2700 = \boxed{2750 \, \text{m}}
 
 % section 2e ----------------------------------------------------------------------------------------------------
 
-\section*{2e) Cálculo de el desplazamiento del coche}
+\section*{2e - Cálculo de el desplazamiento del coche}
 
 Dado que \( S(90) = 2750 \, \text{m} \) y \( S_0 = 50 \, \text{m} \), podemos calcular el desplazamiento \(\Delta S\):
 
